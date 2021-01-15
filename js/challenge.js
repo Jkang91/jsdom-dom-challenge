@@ -63,8 +63,8 @@ submitBtn.addEventListener("click", submitComment)
 
 function submitComment(event){
     event.preventDefault();
-    let comment = document.getElementById("comment-input").value;
-    let commentsList = document.getElementById("list");
+    const comment = document.getElementById("comment-input").value;
+    const commentsList = document.getElementById("list");
     let p = document.createElement("p");
     let node = document.createTextNode(comment);
     p.append(node);
